@@ -1,0 +1,55 @@
+<!-- 
+Name: Angel Solares
+Email: angel_solares@student.uml.edu
+File: Scrabble.html
+Date: 12/18/23
+GUI Assignment: Html scrabble file, assignment is to create a game of scrabble  
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Drag and Drop Scrabble Letters</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="scrabblejs.js"></script>
+</head>
+<body>
+
+  <div class="TitleGame">SCRABBLE!
+    
+    <div class="scoreLabel">Score: 
+    <div id="score">0</div>
+    </div>
+    <div class="pointsLabel">Total Points: 
+      <div id="points">0</div>
+      </div>
+    <div class="currentWord">Word: </div>
+    <div id="game-container">
+    <div id="gameboard" class="droppable">
+
+ <div id="gameboard">
+    <div class="targetBlock ui-droppable" row="0" col="0"> </div>
+    <div class="doubleScoreTargetBlock ui-droppable" row="0" col="1"> </div>
+    <div class="targetBlock ui-droppable" row="0" col="2"> </div>
+    <div class="targetBlock ui-droppable" row="0" col="3"> </div>
+    <div class="targetBlock ui-droppable" row="0" col="4"> </div>
+    <div class="doubleScoreTargetBlock ui-droppable" row="0" col="5"> </div>
+    <div class="targetBlock ui-droppable" row="0" col="6"> </div>
+</div>
+
+    </div>
+
+    <div id="rack" class="droppable">
+      <img src="scrabble-tile-holder-406774_640.png" alt="Tile Holder">
+      <div id="random-tiles" class="tile-container"></div>
+    </div>
+    <div id="buttons">
+      <button id="restartButton">Restart</button>
+      <button id="saveWordButton">Save Word</button>
+      <button id="clearButton">Clear</button>
+  </div>
+</body>
+</html>

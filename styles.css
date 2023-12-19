@@ -1,0 +1,105 @@
+ /* 
+Name: Angel Solares
+Email: angel_solares@student.uml.edu
+File: styles.css
+Date: 12/18/23
+GUI Assignment: The styling of the scrabble game
+*/
+
+
+body {
+  background-color:bisque;
+}
+
+.TitleGame {
+    text-align: center; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+.scoreLabel {
+    text-align: center; 
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.pointsLabel {
+  text-align: center; 
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 35px;
+  margin-bottom: 15px;
+}
+
+.currentWord {
+    text-align: center; 
+    font-family: Arial, sans-serif; 
+    font-size: 30px;
+    margin-bottom: 20px;
+  
+  }
+
+#game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+  }
+
+  .tile-container .draggable {
+    width: 100px; 
+    height: 100px; 
+  }
+
+  .targetBlock {
+    width: 90px;
+    height: 90px;
+    background-image: url(img/blanktile.png);
+    background-size: cover;
+    border: 3px solid #000; 
+    margin: 2px;
+    display: inline-block;
+    vertical-align: top; 
+    margin-bottom: 20px; 
+}
+
+.doubleScoreTargetBlock {
+    width: 90px;
+    height: 90px;
+    background-image: url(img/doublewordtile.jpg);
+    background-size: cover;
+    border: 3px solid #000; 
+    margin: 2px;
+    display: inline-block;
+    vertical-align: top; 
+    margin-bottom: 10px; 
+}
+
+#buttons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+#buttons button {
+  margin: 0 10px;
+  font-size: 18px; 
+}
+
+  #rack {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+  
+  .tile-container {
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 5px; 
+  }
+  
